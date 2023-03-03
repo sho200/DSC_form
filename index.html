@@ -88,11 +88,11 @@
             $('form').submit(function() {
                 const old = $('input[name="years"]').val();
                 const clas = $('input[name="class"]').val();
+                const num = $('input[name="user_num').val();
                 const name = $('input[name="name"]').val();
+                const mail = $('input[name="email"]').val();
 
-                const haikin = $('input[name="haikin"]').val();
-                const sukuwat = $('input[name="sukuwat"]').val();
-                const msg = `${old}\n${name}\n${clas}\n${haikin}\n${sukuwat}`;
+                const msg = `${old}\n${clas}\n${num}\n${name}\n${mail}`;
                 sendText(msg);
                 return false;
             });
